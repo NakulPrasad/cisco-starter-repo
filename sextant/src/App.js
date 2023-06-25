@@ -2,6 +2,7 @@ import React from 'react'
 import Banner from './components/Banner';
 import Exhibit from './components/Exhibit';
 import Address from './components/Address';
+import Pylon from './components/Pylon';
 
 function App() {
   return (
@@ -19,7 +20,11 @@ function App() {
           </Exhibit>
           </div>
 
-          <div className="col mb-5"><Exhibit /></div>
+          <div className="col mb-5">
+            <Exhibit name="Latency">
+              <Pylon />
+            </Exhibit>
+          </div>
 
         </div>
       </div>
